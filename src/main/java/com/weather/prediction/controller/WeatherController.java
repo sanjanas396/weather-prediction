@@ -9,6 +9,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,6 +22,7 @@ public class WeatherController {
 
     @ApiOperation("Return a JSON object that gives the weather averages.")
     @GetMapping(value = "/weather", produces = MediaType.APPLICATION_JSON_VALUE)
+    @CrossOrigin(origins = "*")
     public WeatherResponse getCity(@ApiParam("City's name") @RequestParam String city) {
         System.out.println("city "+city);
         return weatherService.getWeatherService(city);

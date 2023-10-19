@@ -1,13 +1,15 @@
 package com.weather.prediction.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.math.BigDecimal;
 
 public class Main {
 
     private float temp;
-
+    @JsonProperty("temp_min")
     private float tempMin;
-
+    @JsonProperty("temp_max")
     private float tempMax;
 
     private float pressure;
@@ -52,5 +54,16 @@ public class Main {
 
     public void setHumidity(int humidity) {
         this.humidity = humidity;
+    }
+
+    @Override
+    public String toString() {
+        return "Main{" +
+                "temp=" + temp +
+                ", temp_min=" + tempMin +
+                ", temp_max=" + tempMax +
+                ", pressure=" + pressure +
+                ", humidity=" + humidity +
+                '}';
     }
 }

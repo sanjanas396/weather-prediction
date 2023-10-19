@@ -1,0 +1,9 @@
+{
+  "Rain": "Carry umbrella",
+  "Drizzle": "Carry umbrella",
+  "Thunderstorm": "Don’t step out, A Storm is brewing",
+  "Windy": "It’s too windy, watch out",
+  "Snow":"Snowfall is on the way. Don't forget your winter gear and drive safely",
+  "Clouds": "Perfect for a cozy day indoors or enjoy the refreshing walk outside",
+  "Default": "Enjoy your day"
+}

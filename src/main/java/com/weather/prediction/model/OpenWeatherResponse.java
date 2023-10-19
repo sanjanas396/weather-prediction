@@ -8,6 +8,7 @@ public class OpenWeatherResponse {
     Integer message;
     Integer cnt;
     List<WeatherList> list;
+    City city;
 
     public String getCod() {
         return cod;
@@ -39,5 +40,24 @@ public class OpenWeatherResponse {
 
     public void setList(List<WeatherList> list) {
         this.list = list;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return "OpenWeatherResponse{" +
+                "cod='" + cod + '\'' +
+                ", message=" + message +
+                ", cnt=" + cnt +
+                ", list=" + list +
+                ", city=" + city +
+                '}';
     }
 }

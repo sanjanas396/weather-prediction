@@ -7,13 +7,14 @@ public class CurrentWeather {
     String timeStamp;
     float temperature;
     int humidity;
-    float minTemp;
-    float maxTemp;
+    float tempMin;
+    float tempMax;
     float windSpeed;
     String icon;
     String desc;
     String message;
     int clouds;
+    String time;
 
     public String getTimeStamp() {
         return timeStamp;
@@ -37,22 +38,6 @@ public class CurrentWeather {
 
     public void setHumidity(int humidity) {
         this.humidity = humidity;
-    }
-
-    public float getMinTemp() {
-        return minTemp;
-    }
-
-    public void setMinTemp(float minTemp) {
-        this.minTemp = minTemp;
-    }
-
-    public float getMaxTemp() {
-        return maxTemp;
-    }
-
-    public void setMaxTemp(float maxTemp) {
-        this.maxTemp = maxTemp;
     }
 
     public float getWindSpeed() {
@@ -93,5 +78,41 @@ public class CurrentWeather {
 
     public void setClouds(int clouds) {
         this.clouds = clouds;
+    }
+
+    public float getTempMin() {
+        return tempMin;
+    }
+    public void setTempMin(float tempMin) {
+        this.tempMin = tempMin;
+    }
+    public float getTempMax() {
+        return tempMax;
+    }
+    public void setTempMax(float tempMax) {
+        this.tempMax = tempMax;
+    }
+    public String getTime() {
+        return time;
+    }
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    @Override
+    public String toString() {
+        return "CurrentWeather{" +
+                "timeStamp='" + timeStamp + '\'' +
+                ", temperature=" + temperature +
+                ", humidity=" + humidity +
+                ", tempMin=" + tempMin +
+                ", tempMax=" + tempMax +
+                ", windSpeed=" + windSpeed +
+                ", icon='" + icon + '\'' +
+                ", desc='" + desc + '\'' +
+                ", message='" + message + '\'' +
+                ", clouds=" + clouds +
+                ", time='" + time + '\'' +
+                '}';
     }
 }
