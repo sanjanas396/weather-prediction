@@ -2,8 +2,6 @@ package com.weather.prediction.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.math.BigDecimal;
-
 public class Main {
 
     private float temp;

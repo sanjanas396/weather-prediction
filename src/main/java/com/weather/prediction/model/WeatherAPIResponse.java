@@ -2,7 +2,7 @@ package com.weather.prediction.model;
 
 import java.util.List;
 
-public class WeatherResponse {
+public class WeatherAPIResponse {
 
     List<TimeWiseWeather> timeWiseWeatherList;
     List<TimeWiseWeather> daywiseWeatherList;

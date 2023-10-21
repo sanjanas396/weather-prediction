@@ -1,6 +1,6 @@
 {
-  "Rain": "Carry umbrella",
-  "Drizzle": "Carry umbrella",
+  "Rain": "Grab your umbrella, it's raining outside!",
+  "Drizzle": "Rainy weather calls for a hot cup of coffee. Carry umbrella if you are steping out",
   "Thunderstorm": "Don’t step out, A Storm is brewing",
   "Windy": "It’s too windy, watch out",
   "Snow":"Snowfall is on the way. Don't forget your winter gear and drive safely",

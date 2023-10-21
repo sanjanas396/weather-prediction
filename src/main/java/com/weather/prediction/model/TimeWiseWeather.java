@@ -1,9 +1,6 @@
 package com.weather.prediction.model;
 
-import org.springframework.context.annotation.Bean;
-
-public class TimeWiseWeather {
-
+public class  TimeWiseWeather {
     CurrentWeather currentWeather;
     String id;
 

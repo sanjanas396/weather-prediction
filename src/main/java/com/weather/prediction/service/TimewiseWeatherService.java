@@ -1,6 +1,5 @@
 package com.weather.prediction.service;
 
-import com.weather.prediction.Utils.MiscUtils;
 import com.weather.prediction.model.TimeWiseWeather;
 import com.weather.prediction.model.WeatherList;
 import org.springframework.beans.factory.annotation.Autowired;

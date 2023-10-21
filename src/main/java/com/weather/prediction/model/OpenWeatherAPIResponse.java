@@ -2,7 +2,7 @@ package com.weather.prediction.model;
 
 import java.util.List;
 
-public class OpenWeatherResponse {
+public class OpenWeatherAPIResponse {
 
     String cod;
     Integer message;

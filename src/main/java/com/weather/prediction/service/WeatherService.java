@@ -1,13 +1,10 @@
 package com.weather.prediction.service;
 
-import com.weather.prediction.Utils.MiscUtils;
 import com.weather.prediction.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 @Service
 public class WeatherService {
@@ -19,15 +16,14 @@ public class WeatherService {
     @Autowired
     DaywiseWeatherService daywiseWeatherService;
 
-    public WeatherResponse getWeatherService(String city) {
-        OpenWeatherResponse resp = openWeatherMapAPIService.invokeOpenWeatherAPIUrl(city, 40);
+    public WeatherAPIResponse getWeatherAPIResponse(String city) {
+        OpenWeatherAPIResponse resp = openWeatherMapAPIService.invokeOpenWeatherAPIUrl(city, 40);
         return getWeatherResponse(resp);
     }
 
-    public WeatherResponse getWeatherResponse(OpenWeatherResponse resp) {
+    public WeatherAPIResponse getWeatherResponse(OpenWeatherAPIResponse resp) {
         List<WeatherList> weatherList = resp.getList();
-
-        WeatherResponse weatherResponse = new WeatherResponse();
+        WeatherAPIResponse weatherResponse = new WeatherAPIResponse();
         weatherResponse.setTimeWiseWeatherList(timewiseWeatherService.getTimeWiseWeatherList(weatherList));
         weatherResponse.setDaywiseWeatherList(daywiseWeatherService.getDaywiseWeatherList(weatherList));
         weatherResponse.setCity(resp.getCity());

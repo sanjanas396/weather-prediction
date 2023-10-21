@@ -2,14 +2,6 @@ package com.weather.prediction.model;
 
 public class Wind {
 
-    public Wind(){}
-
-    public Wind(float speed, String deg, String gust) {
-        this.speed = speed;
-        this.deg = deg;
-        this.gust = gust;
-    }
-
     float speed;
     String deg;
     String gust;
