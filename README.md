@@ -28,3 +28,8 @@ This Spring Boot application follows a Service Layer pattern, separating concern
 ### API Key and URLs
 
 API key and URLs for OpenWeatherMap should be configured in `application.properties`:
+
+### Run code with Docker
+`mvn clean install`
+`docker build -t weather-prediction.jar .`
+`docker run -p 8080:8080 weather-prediction.jar`
